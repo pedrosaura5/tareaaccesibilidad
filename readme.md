@@ -9,7 +9,16 @@ Este proyecto tiene como objetivo demostrar cómo se puede mejorar la accesibili
 - Utilizar herramientas de validación de accesibilidad como **WAVE**, **Axe**, y **Lighthouse**.
 - Documentar el proceso de mejora de la accesibilidad y los cambios realizados en el código.
 
-## Modificaciones Realizadas
+## Prompt
+Modifica el siguiente código HTML para cumplir con las pautas de accesibilidad WCAG 2.2 (niveles A, AA y AAA). Asegúrate de:
+
+Añadir atributos ARIA en los elementos interactivos como formularios, botones, imágenes y enlaces.
+Mejorar la semántica usando etiquetas HTML5 adecuadas (<header>, <main>, <section>, <nav>, <footer>).
+Incluir descripciones accesibles en imágenes mediante alt adecuados y, si es necesario, aria-describedby.
+Asegurar una correcta jerarquía de encabezados (<h1>, <h2>, <h3>, etc.).
+Garantizar un adecuado contraste de colores y accesibilidad para la navegación con teclado.
+Incluir roles ARIA y etiquetas aria-live en mensajes dinámicos si los hay.
+Optimizar la accesibilidad de formularios, asegurando etiquetas <label> correctamente asociadas y utilizando aria-invalid, aria-required, y aria-describedby para errores de validación.
 
 ### 1. **Accesibilidad de la Navegación:**
    - **Cambio:** Se añadieron los atributos `role="link"` y `aria-label` a los enlaces de navegación.

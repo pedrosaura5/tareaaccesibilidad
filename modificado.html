@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ejemplo accesible y optimizada">
+    <meta name="keywords" content="accesibilidad, WCAG, ejemplo, HTML">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejemplo de Cabeceras</title>
+    
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Inicio</a> |
+            <a href="contacto.html">Contacto</a> |
+            <link rel="stylesheet" href="style.css">
+        </nav>
+    </header>
+
+    <main>
+        <h1>Título Principal</h1>
+
+        <section aria-labelledby="galeria-heading">
+            <h2 id="galeria-heading">Cuadros</h2>
+            <p>Cuadros disponibles:</p>
+            <img src="imagen1.png" alt="Imagen de una ciudad" width="300">
+            <img src="imagen2.png" alt="Imagen de un perro" width="300">
+            
+            <p><strong>No hay mas</strong> y <em></em>punto</p>
+        </section>
+
+        <section aria-labelledby="productos-heading">
+            <h2 id="productos-heading">Stock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Foto ciudad</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Foto perro</td>
+                        <td>$80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="formulario-heading">
+            <h2 id="formulario-heading">Formulario de Registro</h2>
+            <form action="procesar.php" method="POST" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true" aria-describedby="nombre-error">
+                <span id="nombre-error" class="error" aria-live="polite"></span>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error">
+                <span id="email-error" class="error" aria-live="polite"></span>
+
+                
+
+                <label><input type="checkbox" name="terminos" required aria-required="true" aria-describedby="terminos-error"> Acepto recibir informacion por correo</label>
+                <span id="terminos-error" class="error" aria-live="polite"></span>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="acciones-heading">
+            <h2 id="acciones-heading">Botones</h2>
+            <button onclick="alert('No le des mas a este boton')">Pulsa</button>
+            <button type="button" onclick="window.location.href='https://www.youtube.com/'">Youtube</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 </p>
+    </footer>
+
+    
+</body>
+</html>
